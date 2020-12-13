@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header">
+<div id="logo">
+<img src="/storage/emulated/0/Pictures/File_000.png" class="center"/>
+</div>
+</header>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</a></li>
+<li><a href="website_home.html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>'Game Changer' Perovskite Can Detect Gamma Rays</h2></center>
+<h4>Nik Papageorgiou</h4>
+
+<p>That last application, photo -- or light -- detection, is of particular interest to scientists at EPFL's School of Basic Sciences who have developed a perovskite that can detect gamma rays. Led by the labs of Professors Lászlo Forró and Andreas Pautz, the researchers have published their work in Advanced Science.</p>
+
+<p>"This photovoltaic perovskite crystal, grown in this kilogram size, is a game changer," says Forró. "You can slice it into wafers, like silicon, for optoelectronic applications, and, in this paper, we demonstrate its utility in gamma-ray detection."</p>
+
+<h3>Monitoring Gamma Rays</h3>
+
+<p>Gamma-rays are a kind of penetrating electromagnetic radiation that is produced from the radioactive decay of atomic nuclei, e.g., in nuclear or even supernovae explosions. Gamma-rays are on the shortest end of the electromagnetic spectrum, which means that they have the highest frequency and the highest energy. Because of this, they can penetrate almost any material, and are used widely in homeland security, astronomy, industry, nuclear power plants, environmental monitoring, research, and even medicine, for detecting and monitoring tumors and osteoporosis.</p>
+
+<p>But exactly because gamma rays can affect biological tissue, we have to be able to keep an eye on them. To do this, we need simple, reliable, and cheap gamma-ray detectors. The perovskite that the EPFL scientists developed is based on crystals of methylammonium lead tribromide (MAPbBr3) and seems to be an ideal candidate, meeting all these requirements.</p>
+
+<h3>Crystal-Clear Advantages</h3>
+
+<p>Perovskites are first "grown" as crystals, and the quality and clarity of the crystals determines the efficiency of the material when it is turned into thin films that can be used in devices like solar panels.</p>
+
+<p>The perovskite crystals that the EPFL scientists made show high clarity with very low impurities. When they tested gamma-rays on the crystals, they found that they generated photo-carriers with a high "mobility-lifetime product," which is a measurement of the quality of radiation detectors. In short, the perovskite can efficiently detect gamma rays at room temperatures, simply by resistivity measurement.</p>
+
+<h3>Cheaper and Scalable Synthesis</h3>
+
+<p>The MAPbBr3 part of the "metal halide" family of perovskites, meaning that, unlike market-leading crystals, its crystals can be grown from abundant and low-cost raw materials. The synthesis takes place in solutions close to room temperature without needing expensive equipment.</p>
+
+<p>Of course, this is not the first perovskite made for gamma ray-detection. But the volume of most lab-grown metal halide perovskites used for this is limited to about 1.2 ml, which is hardly scalable to commercial levels. However, the team at EPFL also developed a unique method called 'oriented crystal-crystal intergrowth' that allowed them to make a whole liter of crystals weighing 3.8 kg in total.</p>
+
+<p>"Personally, I enjoyed very much to work at the common frontiers of condensed matter physics, chemistry and reactor physics, and to see that this collaboration could lead to important application to our society," says Pavao Andricevic, the lead-author.</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
