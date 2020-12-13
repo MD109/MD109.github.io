@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header">
+<div id="logo">
+<img src="/storage/emulated/0/Pictures/File_000.png" class="center"/>
+</div>
+</header>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+</div>
+</li>
+<li><a href=".html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>A Biochemical Random Number</h2></center>
+<h4>Linda C. Meiser, Julian Koch, Philipp L. Antkowiak, Wendelin J. Stark, Reinhard Heckel, Robert N. Grass</h4>
+
+<p>As a rule, they are generated using physical methods. For instance, thanks to the tiniest high-frequency electron movements, the electrical resistance of a wire is not constant but instead fluctuates slightly in an unpredictable way. That means measurements of this background noise can be used to generate true random numbers.</p>
+
+<p>Now, for the first time, a research team led by Robert Grass, Professor at the Institute of Chemical and Bioengineering, has described a non-physical method of generating such numbers: one that uses biochemical signals and actually works in practice. In the past, the ideas put forward by other scientists for generating random numbers by chemical means tended to be largely theoretical.</P>
+
+<h3><b>DNA Synthesis with Random Building Blocks</b></h3>
+
+<p>For this new approach, the ETH Zurich researchers apply the synthesis of DNA molecules, an established chemical research method frequently employed over many years. It is traditionally used to produce a precisely defined DNA sequence. In this case, however, the research team built DNA molecules with 64 building block positions, in which one of the four DNA bases A, C, G and T was randomly located at each position. The scientists achieved this by using a mixture of the four building blocks, rather than just one, at every step of the synthesis.</p>
+
+<p>As a result, a relatively simple synthesis produced a combination of approximately three quadrillion individual molecules. The scientists subsequently used an effective method to determine the DNA sequence of five million of these molecules. This resulted in 12 megabytes of data, which the researchers stored as zeros and ones on a computer.</p>
+
+<h3><b>Huge Quantities of Randomness in a Small Space</b></h3>
+
+<p>However, an analysis showed that the distribution of the four building blocks A, C, G and T was not completely even. Either the intricacies of nature or the synthesis method deployed led to the bases G and T being integrated more frequently in the molecules than A and C. Nonetheless, the scientists were able to correct this bias with a simple algorithm, thereby generating perfect random numbers.<p/>
+
+<p>The main aim of ETH Professor Grass and his team was to show that random occurrences in chemical reaction can be exploited to generate perfect random numbers. Translating the finding into a direct application was not a prime concern at first. "Compared with other methods, however, ours has the advantage of being able to generate huge quantities of randomness that can be stored in an extremely small space, a single test tube," Grass says. "We can read out the information and reinterpret it in digital form at a later date. This is impossible with the previous methods."</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</html>
