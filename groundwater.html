@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header">
+<div id="logo">
+<img src="/storage/emulated/0/Pictures/File_000.png" class="center"/>
+</div>
+<center><select name="language" id="language">
+<option value="English">English</option>
+<option value="French">French</option>
+</select>
+</header>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Cate&#769;gories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</a></li>
+<li><a href="website_home.html">Website</a></li>
+</ul>
+
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Big Data Offers Promise of Better Groundwater Management in California</h2></center>
+<h4>Mary Kang, Debra Perrone, Ziming Wang, Scott Jasechko, Melissa M, Rohde</h4>
+
+<p>The research shows that existing groundwater wells already penetrate and encroach upon the bases of fresh water that are used to define basin bottoms. In addition, brackish waters exist within current groundwater basins, and fresh water exists outside delineated groundwater basins. Brackish water, which was once deemed unusable, can now be used, thanks to technological advances. Finally, there are concerns about regulating groundwater on the basis of its quality rather than its usage, as is currently the case, since this provides a loophole for potential groundwater users who could drill deeper and skirt existing restrictions on freshwater pumping.</p>
+
+<p>Together, these findings suggest that groundwater may already be poorly safeguarded in some places and that the 'Base of Fresh Water' concept may need to be reconsidered as a means to define and sustainably manage groundwater in future.</p>
+
+<h3>Need For Up-to-Date Information to Manage A Critical Resource</h3>
+
+<p>"It is challenging for groundwater sustainability agencies to manage groundwater because this critical resource is not being sufficiently monitored," says Mary Kang, an Assistant Professor in McGill University's Department of Civil Engineering and the lead author on the study. An expert on groundwater issues, she has studied the topic in California since 2014. "The base of fresh water was historically set to protect high quality groundwater from oil and gas development. And we find that there is a mismatch between this base of fresh water and what the water quality data shows."</p>
+
+<p>"One component to managing groundwater sustainably is evaluating the physical resource within the context of its users," says Debra Perrone co-author of the study and Assistant Professor in UC Santa Barbara's Environmental Studies Program. "We evaluate the link between groundwater quality, particularly salinity, and groundwater users. We show that the current approach used to manage deep groundwater in some places may risk overlooking the complex realities pertaining to both groundwater salinity and groundwater users. For example, the data suggest that people are constructing groundwater wells deeper than the base of fresh water in some areas."</p>
+
+<p>In 2014, in response to repeated droughts, the state passed the Sustainable Groundwater Management Act (SGMA) to regulate groundwater for the first time in California's history. However, the effectiveness of this legislation is yet to be determined, as it relies upon administrative definitions of groundwater that are based on the extent of fresh water to define a vertical or three-dimensional groundwater basin for managing water.</p>
+
+<p>"The Sustainable Groundwater Management Act currently only applies to fresh groundwater basins since administrative definitions of groundwater originated decades ago when it was economically infeasible to treat and distribute 'unusable' brackish or saline groundwater," says co-author Melissa Rohde, a scientist with The Nature Conservancy of California. Rohde is currently providing scientific support to advance the successful implementation of SGMA. "With technological advances, brackish water is now usable and increasingly desirable with declining access to fresh water. By excluding brackish groundwater from sustainable groundwater management, we run the risk of undermining SGMA and overexploiting this important public resource."</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
