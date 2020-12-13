@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header">
+<div id="logo">
+<img src="/storage/emulated/0/Pictures/File_000.png" class="center"/>
+</div>
+</header>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</li>
+<li><a href="website_home.html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<h2>From the Inside Out: How the Brain Forms Sensory Memories</h2>
+<h4>Max P. Gesellschaft</h4>
+
+<p>The neocortex is the largest area of the human brain. It has expanded and differentiated enormously during mammalian evolution, and is thought to mediate many of the capacities that distinguish humans from their closest relatives. Moreover, dysfunctions of this area also play a central role in many psychiatric disorders. All higher cognitive functions of the neocortex are enabled by bringing together two distinct streams of information: a 'bottom-up' stream carrying signals from the surrounding environment, and a 'top-down' stream that transmits internally-generated information encoding our previous experiences and current aims.</p>
+
+<p>"Decades of investigation have elucidated how sensory inputs from the environment are processed. However, our knowledge of internally-generated information is still in its infancy. This is one of the biggest gaps in our understanding of higher brain functions like sensory perception," says Letzkus. This motivated the team to search for the sources of these top-down signals. "Previous work by us and many other scientists had suggested that the top-most layer of neocortex is likely a key site that receives inputs carrying top-down information. Taking this as a starting point allowed us to identify a region of the thalamus -- a brain area embedded deep within the forebrain -- as a key candidate source of such internal information."</p>
+
+<p>Motivated by these observations Dr. M. Belén Pardi, the first author of the study and postdoctoral researcher in the Letzkus lab, devised an innovative approach that enabled her to measure the responses of single thalamic synapses in mouse neocortex before and after a learning paradigm. "The results were very clear," Pardi remembers. "Whereas neutral stimuli without relevance were encoded by small and transient responses in this pathway, learning strongly boosted their activity and made the signals both faster and more sustained over time." This suggests that the thalamic synapses in neocortex encode the previous experience of the animal. "We were really convinced that this is the case when we compared the strength of the acquired memory with the change in thalamic activity: This revealed a strong positive correlation, indicating that inputs from the thalamus prominently encode the learned behavioral relevance of stimuli," says Letzkus.</p>
+
+<p>But is this mechanism selective for these top-down memory-related signals? Sensory stimuli can be relevant because of what we have learned to associate with them, but also merely due to their physical properties. For instance, the louder sounds are the more readily they recruit attention in both humans and animals. However, this is a low-level function that has little to do with previous experience. "Intriguingly, we found very different, indeed opposite, encoding mechanisms for this bottom-up form of relevance" says Pardi.</p>
+
+<p>Given their central importance, the scientists speculated that the way these signals are received in the neocortex must be tightly regulated. Pardi and co-workers addressed this in further experiments, combined with computational modeling in collaboration with the laboratory of Dr. Henning Sprekeler and his team at Technische Universität Berlin. The results indeed identified a previously unknown mechanism that can finely tune the information along this pathway, identifying a specialized type of neuron in the top-most layer of neocortex as a dynamic gatekeeper of these top-down signals.</p>
+
+<p>"These results reveal the thalamic inputs to sensory neocortex as a key source of information about the past experiences that have been associated with sensory stimuli. Such top-down signals are perturbed in a number of brain disorders like autism and schizophrenia, and our hope is that the present findings will also enable a deeper understanding of the maladaptive changes that underlie these severe conditions," concludes Letzkus.</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
