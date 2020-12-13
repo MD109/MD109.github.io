@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header">
+<div id="logo">
+<img src="/storage/emulated/0/Pictures/File_000.png" class="center"/>
+</div>
+</header>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</a></li>
+<li><a href=".html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Pupils Can Learn More Effectively Through Stories Than Activities</h2></center>
+<h4>Loredana Buchan, Momna Hejmadi, Liam Abrahams, Laurence D. Hurst</h4>
+
+<p>A randomised controlled trial found that children learn about evolution more effectively when engaged through stories read by the teacher, than through doing tasks to demonstrate the same concept.</p>
+
+<p>The scientists investigated several different methods of teaching evolution in primary schools, to test whether a pupil-centred approach (where pupils took part in an activity) or a teacher-centred approach (where pupils were read a story by the teacher), led to a greater improvement in understanding of the topic.</p>
+
+<p>They also looked at whether using human-based examples of evolution (comparing arm bones in humans with those in animals), or more abstract examples that were harder to emotionally engage with (comparing the patterns of trilobites), produced better results in terms of the children's understanding of evolution.</p>
+
+<p>Whilst all the methods improved the pupils' understanding of evolution, the study, published in the journal Science of Learning, found that the story-based approach combined with the abstract examples of evolution were the most effective lessons.</p>
+
+<p>This goes against educational orthodoxy that states that a pupil-centred approach to learning, using human-based examples with which children can easily identify, should yield the best results.</p>
+
+<p>The study recruited 2500 primary school students who were tested for understanding of evolutionary concepts before and after the lessons.</p>
+
+<p>Professor Laurence Hurst, Director of the Milner Centre for Evolution at the University of Bath, led the study.</p>
+
+<p>He said: "We were really surprised by the results -- we expected that pupils would be more engaged with an activity rather than listening to a story, and that children would identify more strongly with the human-based examples of evolution than the somewhat abstract example of trilobites, but in fact the opposite was true."</p>
+
+<p>"This is the first large randomised controlled trial that is evaluating the effectiveness of different methods of teaching, using similar scientific methods to those used in drug interaction trials to test whether a new treatment works."</p>
+
+<p>"Our results show that we should be careful about our preconceptions of what works best."</p>
+
+<p>"We only tested the teaching of evolution in this way -- it would be interesting to see if these findings also applied to other subjects of the curriculum."</p>
+
+<p>Professor Momna Hejmadi, Associate Dean of the University's Faculty of Science, helped to design the study and co-authored the paper. She said: "Evolution was introduced to the national curriculum for primary schools in 2014."</p>
+
+<p>"It's a really important subject as it forms the foundation for many parts of biology. However, many primary school teachers, if they don't have a science background, are less confident about teaching it."</p>
+
+<p>"At the Milner Centre for Evolution, we've developed a range of free lesson plans using really cheap teaching materials, as well as a free online course for teachers to help them engage their pupils with this important subject."</p>
+
+<p>"We'd like to thank the schools who took part in the study, especially the teachers who delivered the lessons. We hope they can continue to successfully use these resources in future years."</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
