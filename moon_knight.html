@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header">
+<div id="logo">
+<img src="/storage/emulated/0/Pictures/File_000.png" class="center"/>
+</div>
+</header>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+<a href="Scifi.html">Science Fiction</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</li>
+<li><a href=".html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Marvel Is Looking To Oscar Isaac To Be MCU’s Moon Knight</h2></center>
+<h4>Tony Schaab</h4>
+
+<p>Born to a respectable family, but eschewing its history and beliefs Marc Spector cut his own path through life by becoming a boxer, a Marine, and finally a CIA operative. Disgusted by the organizations practices and hurt by his own brother Randall’s betrayal, Spector ejected whatever morals he still possessed and fell into mercenary work around the globe. During this dark time, he made friends with Jean-Paul “Frenchie” DuChamp, one of the only bright spots in the violent profession of a hired gun.</p>
+
+<p>Tiring of overthrowing governments and assassinations, Spector entered into the orbit of an extreme terrorist named Bushman who turned on him and left him to die in the harsh Egyptian desert. Somehow, the mercenary made it to a nearby ancient tomb and into the hands of Marlene Alaurune, the daughter of an archaeologist murdered by Bushman. Near dead, Spector rose up to find a statue of the Egyptian deity Khonshu looming over him and believed it to have saved his life. He proceeded to smash Bushman’s operations with Frenchie’s help and later realized he’d gained a new outlook on life.</p>
+
+<p>Spector returned to the United States with his friends and set about creating not only a costumed identity he dubbed Moon Knight, but two other personalities to aid him in his war on crime, millionaire Steven Grant and cab driver Jake Lockley. With Frenchie as his pilot, Moon Knight began to make an impression on the rest of New York City’s heroes.</p>
+
+<p>Isaac, of course, is well-known to audiences from his leading role as Poe Dameron in the three newest Star Wars films, in addition to the slew of other films in which he has featured, including ‘Ex Machina,’ ‘X-Men: Apocalypse,’ and his Golden Globe-winning performance in the HBO miniseries ‘Show Me a Hero.’</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
