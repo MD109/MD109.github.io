@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+</style>
+</head>
+<body>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Cate&#769;gories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+<a href="scifi.html">Science Fiction</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</a></li>
+<li><a href=".html">Website</a></li>
+</ul>
+
+<h1>Michael's Science Blog</h1>
+
+<h2>Jonathan Majors Cast In ‘Ant-Man 3’ As A Classic Marvel Villain</h2>
+<h4>Tony Schaab</h4>
+
+<p>A star who is significantly on the rise, Jonathan Majors has been cast in the forthcoming ‘Ant-Man 3,’ one of the next installments in the wildly successful Marvel Cinematic Universe.  Marvel itself has not confirmed which role Majors will play, but Deadline reports confidently via “sources close to the project” that he will play the iconic villain Kang the Conqueror.</p>
+
+<p>Created by legendary Marvel Comics powerhouses Stan Lee and Jack Kirby, Kang made his first appearance in 1964 in ‘The Avengers’ comic-book series and has had a long and illustrious career of tormenting pretty much every major Marvel hero and team, including the Fantastic Four, Spider-Man, the Inhumans, and the X-Men.</p>
+
+<p>Starring in the as-yet-untitled third Ant-Man film opposite Paul Rudd and Evangeline Lily, Majors joins the established team in the franchise, as Peyton Reed returns as director after helming both ‘Ant-Man’ and ‘Ant-Man and the Wasp.’  Jeff Loveness is writing the script, and MCU overlord Kevin Feige is producing the film.</p>
+
+<p>Majors has risen to prominence in Hollywood over the last few years, most recently in starring roles in the films ‘The Last Black Man in San Francisco’ and Spike Lee’s ‘Da 5 Bloods.’  TV audiences will recognize Majors from his current work on HBO’s ‘Lovecraft Country,’ and he’ll also star in Netflix’s ‘The Harder They Fall’ which is currently in production.</p>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
