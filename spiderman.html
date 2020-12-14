@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header">
+<div id="logo">
+<img src="/storage/emulated/0/Pictures/File_000.png" class="center"/>
+</div>
+</header>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+<a href="scifi.html">Science Fiction</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</li>
+<li><a href="index.html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Benedict Cumberbatch Is Officially Bringing Doctor Strange To ‘Spider-Man 3’</h2></center>
+<h4>Tony Schaab</h4>
+
+<p>Things just keep getting more interesting for the next film installment of everyone’s friendly neighborhood web-slinger.</p>
+
+<p>Hot on the heels of the recent news that Jamie Foxx will be reprising his franchise-jumping role of Electro in ‘Spider-Man 3,’ news has broken today that Benedict Cumberbatch will appear as Doctor Strange in the film as well – and his appearance could potentially serve as an explanation of sorts for Electro’s presence in the Marvel Cinematic Universe.</p>
+
+<p>Foxx’s Electro appeared once on-screen, in 2014’s ‘The Amazing Spider-Man 2.’  This, of course, is not the direct sequel to the upcoming Spider-Man film, but rather the end of Sony’s failed attempt to bring Spidey back to the big screen with Andrew Garfield in the lead role.  Sony does still own the rights to Spider-Man and related characters, but they have struck a deal with Marvel to incorporate the hero, now portrayed on-screen by Tom Holland, into the MCU.  The deal was at risk of expiring late last year, but the two companies worked it out, and Marvel is now set to produce ‘Spider-Man 3,’ the first film in this trilogy which they will be so doing.</p>
+
+<p>So, that’s a long-winded way to say that Foxx’s Electro doesn’t necessarily belong in the MCU, and doesn’t originate there; this is where Dr. Strange could come into play.  The second Doctor Strange film, titled ‘Doctor Strange and the Multiverse of Madness,’ will feature Cumberbatch’s character exploring the titular multiverse, where he has already spent a little “magic Facetime” while looking for realities in which the Avengers defeated Thanos, as chronicled on-screen in ‘Avengers: Infinity War’ and ‘Avengers: Endgame.’  So, conceivably, Strange could run into other versions of well-known MCU characters in his new film, and their enemies as well… does the good Doctor bump into Electro in the Multiverse, and does this interaction somehow carry over into the new Spider-Man film as well?</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
