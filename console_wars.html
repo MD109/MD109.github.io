@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+<a href="scifi.html">Science Fiction</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</li>
+<li><a href="index.html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Science Fiction</h2></center>
+
+<center><h2>Nintendo Vs. Sega Documentary ‘Console Wars’ Coming To CBS All Access This Month</h2></center>
+<h4>Tony Schaab</h4>
+
+<p>Video games have evolved to a point where anyone with a smartphone can play brand-new games with cutting-edge graphics right in the palm of their hands.  Dedicated video-game consoles still exist, of course, for the more “hard-core” gaming fans out there, and the concept of the console itself is nothing new, dating back several decades.</p>
+
+<p>Two of the biggest early players in the video-game console explosion of the 1980s and 1990s are Nintendo and Sega, and their not-always-above-board business-fueled rivalry is being freshly presented in the new documentary ‘Console Wars,’ coming exclusively to CBS All Access on September 23rd of this year.</p>
+
+<p>This documentary is not to be confused with ‘High Score,’ the six-episode limited series on Netflix that takes a more “30,000-foot view” of the beginnings and history of the entire video-game business.  Rather, ‘Console Wars’ will be turning its focus squarely on industry mega-giant Nintendo and their burgeoning feud with upstart console contender Sega, as the two companies famously clashed time and time again over customers, marketing, and sales tactics in the console explosion of the 1990s.</p>
+
+<p>An Official Selection of the 2020 SXSW Film Festival, Console Wars takes viewers back to 1990 when Sega, a fledgling arcade company, assembled a team of misfits to take on the greatest video game company in the world, Nintendo. It was a once-in-a-lifetime, no-holds-barred conflict that pit brother against brother, kids against grownups, Sonic against Mario, and uniquely American capitalism against centuries-old Japanese tradition. For the first time ever, the men and women who fought on the front lines for Sega and Nintendo discuss this battle that defined a generation.</p>
+
+<p>‘Console Wars’ is based on the 2014 non-fiction novel of the same name.  While there have been some initial confusion as to whether this is a standalone movie-length documentary or a mini-series, information from CBS seems to indicate that it is the former, despite rumors of there being enough content that it was changed mid-production to the latter.</p>
+
+<p>The documentary is executive-produced in part by Seth Rogen and Evan Goldberg, and ‘Console Wars’ novel author Blake J. Harris, is the co-director of the documentary.</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
