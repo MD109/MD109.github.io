@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+<a href="scifi.html">Science Fiction</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</li>
+<li><a href="index.html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Science Fiction</h2></center>
+
+<center><h2>The First Teaser Trailer For Robert Kirkman’s ‘Invincible’ Has Arrived</h2></center>
+<h4>Tony Schaab</h4>
+
+<p>Robert Kirkman is known to many pop-culture fans as the man who created ‘The Walking Dead’ (technically co-created with artist and longtime collaborator Tony Moore), the Image Comics comic-book series that spawned a hugely successful TV show that is still running into its eleventh season on AMC – and which, in turn, has spawned several other series spin-offs as well.</p>
+
+<p>Before ‘The Walking Dead,’ however, Kirkman and artist Cory Walker co-created another title for Image: the son-of-a-famous-superhero-gets-powers-of-his-own tale ‘Invincible,’ and it was a massive hit.  Praised as a more realistic take on a superhero story, the series ran for 144 issues from 2003 to 2018.  Once set to be adapted into a feature film, ‘Invincible’ finds life as an adult-oriented animated series on Amazon’s Prime Video, coming to audiences next year in what’s reported to be an hour-long each, 8-episode first season.</p>
+
+<p>The voice cast for the new series is impressively long, and reads as a “who’s who” of genre stalwarts mixed with several mainstays of ‘The Walking Dead’ TV series.  Ranging from recurring roles to one-off appearances, the announced cast includes Steven Yeun as Mark Grayson/Invincible, J. K. Simmons as Nolan Grayson/Omni-Man, Sandra Oh as Debbie Grayson, Mark Hamill as Art Rosebaum, Seth Rogen as Allen the Alien, Gillian Jacobs as Samantha Eve Wilkins/Atom Eve, Andrew Rannells as William Clockwell, Zazie Beetz as Amber Bennett, Walton Goggins as Cecil Stedman, Jason Mantzoukas as Rex Sloan/Rex Splode, Mae Whitman as Fightmaster & Dropkick, Chris Diamantopoulos as Donald Ferguson/Doc Seismic, Khary Payton as Black Samson, Zachary Quinto as Rudy Conners/Robot, Malese Jow as Kate Cha/Dupli-Kate, Kevin Michael Richardson as Mauler Twins & Monster Girl, Grey Griffin as Shrinking Ray & Amanda, Max Burkholder as Oliver Grayson, Lauren Cohan as War Woman, Sonequa Martin-Green as Green Ghost, Chad Coleman as Martian Man, Michael Cudlitz as Red Rush, Lennie James as Darkwing, Ross Marquand as The Immortal & Aquarius, and Mahershala Ali as Titan.</p>
+
+<p>Here’s the teaser trailer for the series, along with Prime Video’s description:</p>
+
+<p>INVINCIBLE is an adult animated superhero series that revolves around 17-year-old Mark Grayson (Steven Yeun), who’s just like every other guy his age — except his father is the most powerful superhero on the planet, Omni-Man (J.K. Simmons). But as Mark develops powers of his own, he discovers his father’s legacy may not be as heroic as it seems. From Robert Kirkman, the creator of The Walking Dead. Coming to Prime Video in 2021.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JuMiq7eg91M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
