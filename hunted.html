@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+</style>
+</head>
+<body>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Cate&#769;gories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+<a href="scifi.html">Science Fiction</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</a></li>
+<li><a href="index.html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Science Fiction</h2></center>
+
+<center><h2>Star Wars Short Film ‘Hunted’ From Lucasfilm & EA Shows The Empire’s Point Of View</h2></center>
+<h4>Tony schaab</h4>
+
+<p>Depending upon which Star Wars fan you talk to on any given day, the franchise has had its fair share of perceived hits and misses, not only recently but across its 40-plus years of history.  If you’re  fan like I am, you may take particular interest in any Star Wars tale that doesn’t specifically center around someone named Skywalker – and if that kind of Star Wars is your cup of tea blue milk, then you are in luck with ‘Hunted,’ an amazing new short film released last week to help herald the arrival of the franchise’s newest video game.</p>
+
+<p>The 7-minute mini-movie takes a character approach that is fairly unique in the Star Wars universe: it follows the plight of the Galactic Empire as (ostensibly) the “good guys,” or at least the side of the whole good-versus-evil battle that’s being persecuted.  Taking place shortly after the Battle of Endor (aka the events shown to us at the end of ‘Star Wars: Return of the Jedi’ and the “original trilogy”), ‘Hunted’ flips the narrative and shows the Rebellion as the aggressors in the conflict, ruthlessly destroying an Empire base and looking to take no prisoners as the battle mops up.  The central character of the tale is an Imperial TIE Fighter pilot who is being, as the title indicates, hunted by Rebel pilots.  Take a look:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f2VmOqjV_7Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>The Empire’s retreat after a surprise attack marks yet another stumble in the wake of the second Death Star’s destruction. But for one member of Titan Squadron, the battle is far from over. Squadron Leader Varko Grey finds himself as the last TIE pilot on the battlefield, hunted relentlessly by a renegade New Republic X-wing in this standalone STAR WARS: Squadrons story.</p>
+
+<p>Made in collaboration by Motive Studios, Lucasfilm, and ILM, “Hunted” is set before the events of STAR WARS: Squadrons, introducing you to one of the ace pilots who you’ll be fighting alongside in the story to unfold.</p>
+
+<p>Master the art of starfighter combat in the authentic piloting experience STAR WARS™: Squadrons, available October 2, 2020 on PlayStation®4, Xbox One, PC on EA.com, Steam, and Epic Games Store, and playable in Virtual Reality (VR) on PlayStation 4 and PC with cross-play support.</p>
+
+<p>Even if you’re not a player of Star Wars video games, you have to admit, this is one cool short film and one very smart piece of marketing by EA and Lucasfilm.</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
