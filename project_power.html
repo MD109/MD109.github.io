@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header">
+<div id="logo">
+<img src="/storage/emulated/0/Pictures/File_000.png" class="center"/>
+</div>
+</header>
+
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+<a href="scifi.html">Science Fiction</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</li>
+<li><a href="index.html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Science Fiction</h2></center>
+
+<center><h2>Dominique Fishback Is “So Thankful” For Her Unique Character In ‘Project Power’</h2></center>
+<h4>Jax Motes</h4>
+
+<p>Netflix’s latest original movie, 'Project Power' debuted over the weekend and was a huge success.  (Netflix doesn’t release streaming numbers, but it was #1 for all three days.)  The film stars Jamie Foxx and Joseph Gordon-Levitt, but it seems that the breakout performance came from Dominique Fishback, who portrayed aspiring rapper/drug dealer, Robin, who gets dragged into Foxx’s character, Arthur’s vendetta against the pharmaceutical company that is flooding the streets with a designer drug called Power, which gives users superpowers for a limited time.</p>
+
+<p>Fishback previously co-starred on the Emmy-nominated series ‘The Deuce’, sketch comedy series ‘Random Acts of Flyness’, and the period miniseries ‘Show Me A Hero’, all of which were released by HBO.  She also appeared in the films ‘The Hate U Give’ and ‘Night Comes On’.</p>
+
+<p>But she seems particularly connected to her role as Robin, telling Variety: "I was so thankful to [screenwriter] Mattson Tomlin because she was really on the page already — we knew what she cared about, we knew who she loved, we knew her passions, we knew her fears.  We really got a chance to see her heart on the paper so that just made it even more exciting for me to do that character work where she is grounded in reality and we are focused on her the character… What came to mind was ‘Man on Fire’ with Denzel Washington and Dakota Fanning and Natalie Portman in ‘The Professional,’.  I remember watching [those] movies constantly as a kid and being like ‘I want to do a role like that. [But] we don’t really get to see young Black girls take up space in that way.</p>
+
+<p>"We haven’t really gotten to see it where this guy is a powerful fighter who will do anything to get this girl back and make sure that she gets a chance to live, even if he doesn’t. We don’t get to see that love for Black girls in film, especially in sci-fi.  So, to not only get that that opportunity to live out that childhood dream, but then to do it with Jamie and Joseph, and the fact that [spoiler alert] Robin does get to save them as well — she’s so smart, so witty and she uses her intelligence and her brain to save them to save them as a group — I’m so thankful.”</p>
+
+<p>While ‘Project Power’ received a ton of streams, not everyone was impressed.  Critics were positive enough, with its Rotten Tomatoes score at a fair 60%, but its audience score is lower at 56%.</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
