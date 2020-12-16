@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+<a href="scifi.html">Science Fiction</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</li>
+<li><a href="index.html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Science Fiction</h2></center>
+
+<center><h2>Season 3 Of ‘The Orville’ Due To Resume Production In December</h2></center>
+<h4>Tony Schaab</h4>
+
+<p>It’s no secret that the many aspects of our world have ground to a halt during this strange, pandemic-stricken year of 2020.  One of the industries hit hardest during the various stages of societal shutdown is the entertainment industry, including live shows and productions both theatrical and televised.</p>
+
+<p>The third season of ‘The Orville,’ Seth McFarlane’s sci-fi comedy/action series that is seeing a Fox to Hulu in its upcoming season, had already begun filming in October 2019 when production was shut down earlier this year.  Now, according to a source, things are set to resume next month in an attempt to finish the season’s shooting schedule and keep things moving along for the series.</p>
+
+<p>In a recent interview, 'The Orville’ executive producer Brannon Braga talked about the series and the delays in production: "This is a work of deep passion for Seth, and it’s a really great season. I think you would be hard pressed to find anyone on the show that isn’t eager to get back to work, as long as it is safe. The shot delay is simply COVID, but it’s also taking longer to film because it’s so much more ambitious even in its scope, in comparison to the first two seasons. And that’s partly because it’s on Hulu, and we can expand the scope and increase the length of the episodes, and all the reasons Seth wanted to take it to a streaming service. This season is the best one. I can’t wait for people to see it."</p>
+
+<p>It sounds like cast and crew will be back in action on the Fox production lots starting in the first week of December, shooting up to the Christmas holiday and then picking up again in early January 2021.  It’s estimated that total production to finish the third season will take five to six months.</p>
+
+<p>There is not a specific date at this time for the next season to premiere on Hulu, but it’s thought that late 2021 is the preferred target time.  There will be 11 episodes in the season, and these episodes may actually feature longer run times than the first two seasons did, thanks to the show’s move to a streaming-only service as opposed to the more traditional  network TV constraints.</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
