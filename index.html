@@ -74,6 +74,45 @@ display: block;
 <p>Hi! My name is Michael, and welcome to my lab. If you like crazy chemical reactions, then you've come to the right place!</p>
 
 <center><h2>Video of the Month</h2></center>
-<center><iframe width="420" height="315" src="https://www.youtube.com/embed/7pKAtm01qxY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<?php>
+<button onclick="getVideo();">Get Video</button>
+<script type="text/javascript">
+fuction getVideo() {
+var channelId="UC_kjzB7ME354bg-EpeGbZVQ";
+var apiKey="AIzaSyAivDwuE1m3C_un8hPTIX6ztmH9S0GFRE0";
+var videosUrl="https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&channelId=" + channelId + "&maxResults=24&key=" + apiKey;
+var ajax= new XMLHttpRequest();
+ajax.open("GET", videosUrl, true);
+ajax.send();
+ajax.onreadystatechange= function () {
+if (this.readyState == 4 && this.readyStatus == 24) {
+console.log(this.responseText);
+var json = JSON.parse(this.responseText);
+var videos = json.items;
+console.log(videos);
+var randomNumber = Math.floor(Math.random * (videos.length + 1));
+var randomVideo = videos[randomNumber];
+console.log(randomVideo);
+var videoId = randomvideo.id.videoId;
+var videoUrl = "https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&part=snippet,contentDetails,statistics&key=" + apiKey;
+var ajax = new XMLHttpsRequest("GET", videoUrl, true);
+ajax.open();
+ajax.send;
+ajax.onreadystatechange = function () {
+if (this.readyState == 4 && this.status == 24) {
+console.log(this.responseText);
+var json = JSON.parse(this.responseText);
+var singleVideo = json.items[0].id
+var youtubeUrl = "https://youtube.com/watch?v=" + singleVideo;
+console.log(youtubeUrl);
+window.open(youtubeUrl, "window_name", "toolbar=yes");
+}
+};
+}
+};
+}
+</script>
+</script>
+<?>
 </body>
 </html>
