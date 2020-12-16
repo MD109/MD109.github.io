@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Michael's Science Blog</title>
+<style>
+body {
+background-color: white;
+}
+button {
+font-size: 150%;
+background-color: red;
+}
+li {
+display: inline;
+float: left;
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: red;
+}
+li a, .dropbtn {
+display: inline-block;
+background-color: red;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: black;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+z-index: 1
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+div#top-header {
+width: 100%;
+height: 75px;
+background-color: white;
+text-align: center;
+padding: 0px;
+}
+img {
+width: 200px;
+height: 150px;
+float: center;
+border: 1px solid red;
+padding: 0px;
+}
+.header img {
+margin-left: 30%;
+}
+h4 {
+text-align: right;
+}
+#respond {
+margin-top: 40px;
+}
+#respond input[type='text'],
+#respond textarea {
+margin-bottom: 10px;
+display: block;
+width: 100%
+border: 1px solid rgba(0, 0, 0, 0.1);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-ms-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+line-height: 1.4em;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="blog.html">Home</a></li>
+<li class="dropdown">
+<a href="javasript:void(0)" class:"dropbtn">Categories</a>
+<div class="dropdown-content">
+<a href="health.html">Health</a>
+<a href="scitech.html">Physical Science & Technology</a>
+<a href="environment.html">Environment</a>
+<a href="society.html">Society</a>
+<a href="scifi.html">Science Fiction</a>
+</div>
+</li>
+<li><a href="email_list.html">Email List</a></li>
+<li><a href="socials.html">Social Media</li>
+<li><a href="index.html">Website</a></li>
+</ul>
+
+<center><h1>Michael's Science Blog</h1></center>
+
+<center><h2>Books</h2></center>
+
+<center><h2>‘Twilight’ Still Sparkles: Stephanie Meyer’s ‘Midnight Sun’ Debuts At #1</h2></center>
+<h4>Jax Motes</h4>
+
+<p>The sun hasn’t set on the 'Twilight' franchise.  12 years after the last novel in Stephanie Meyer’s vampire romance franchise was published– 2008’s ‘Breaking Dawn’– Meyer is back in the #1 spot of USA TODAY's Best-Selling Books list, with ‘Midnight Sun’, which sold over a million copies in its first week of release, including presales and all formats.  ‘Midnight Sun’ is a retelling of the first ‘Twilight’ told from the perspective of the male lead, Edward Cullen, the character played by Robert Pattinson in the films.</p>
+
+<p>"We're absolutely thrilled to bring people back to the Twilight Saga world and to celebrate this major achievement with Stephenie and the fans and booksellers who’ve supported her for the last fifteen years.  In addition to the breathtaking sales, it is profoundly gratifying to hear how much the fans are loving the novel. The resounding response to the read has been ‘it was definitely worth the wait!’ ”</p>
+
+<p>And there’s more to come!  During a Books-A-Million virtual event, Meyer divulged: "There are two more books I think in the world that I want to write. I have got them outlined and a chapter written I think of the first one, so I know it’s there. I am not ready to do that right now, I want to do something brand new.  For me, a lot of the joy of writing comes from creating and I really want to do a new world and new rules and new mythology. Mythology is kind of my thing.”</p>
+
+<p>Hopefully, Twi-hards won’t have to wait another 12 years for the next book in this series.  One thing that Meyer revealed is that the next two books would not be additional do-overs of the original books from Edward’s perspective, so expect something completely different.</p>
+
+<div id="respond">
+<h3>Comments</h3>
+
+<form action="post_comment.php" method="post" id="commentform">
+
+<label for="comment_author" class="required">Name</label>
+<input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+<label for="comment" class="required">Message</label>
+<textarea name="comment" id="comment" rows="10" tabindex="4" required="required"></textarea>
+
+<input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"/>
+<input name="submit" type="submit" value="Submit Comment"/>
+</form>
+</div>
+</body>
+</html>
