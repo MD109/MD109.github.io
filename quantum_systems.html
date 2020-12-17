@@ -123,5 +123,27 @@ text-align: right;
 <input name="submit" type="submit" value="Submit Comment"/>
 </form>
 </div>
+<div id="display"></div>
+<script type="text/javascript">
+var name=[];
+var nameInput = document.getElementById("name");
+var messageBox = documenr.getElemenrById("display");
+function Allow()
+{
+if (!user.name.value.match(/[a-zA-Z]&/) && user.name.value="";
+}
+window.location.reload()
+}
+fuction insert() {
+titles.push(nameInput.value);
+clearAndShow();
+}
+function clearAndShow() 
+{
+nameInput.value="";
+messageBox.innerHTML ="";
+messageBox.innerHTML += "" + titles.join("<br/>") + "<br/>";
+}
+</script>
 </body>
 </html>
